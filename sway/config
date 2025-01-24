@@ -130,6 +130,9 @@ bindsym $mod+Shift+r restart
 # Exit sway
 bindsym $mod+Shift+e exec swaynag -t warning -m 'Exit sway?' -B 'Yes' 'swaymsg exit'
 
+# Background colour (mocha)
+output * bg #1e1e2e solid_color
+
 # Resize mode
 mode "resize" {
     bindsym j resize shrink width 10px
@@ -177,6 +180,7 @@ for_window [app_id="telegramdesktop"] floating enable, resize set 600 600, move 
 # Move workspaces between outputs
 bindsym $mod+p move workspace to output right
 
+# Second screen settings (very custom)
 output eDP-1 {
     scale 1.1
     position 1920,0
@@ -190,5 +194,6 @@ output DP-2 {
 
 for_window [app_id="org.telegram.desktop"] floating enable, resize set 800 600, move position right 20 bottom 20
 
+# Keyboard layout
 input * xkb_layout "pl,by"
 input * xkb_options "grp:win_space_toggle"
