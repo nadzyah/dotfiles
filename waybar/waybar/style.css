@@ -1,0 +1,149 @@
+@import "mocha.css";
+
+* {
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+#waybar {
+    background: transparent;
+    color: @text;
+    margin: 5px 5px;
+}
+
+window#waybar {
+  /* you can also GTK3 CSS functions! */
+  background-color: shade(@base, 0.9);
+  border: 2px solid alpha(@crust, 0.3);
+}
+
+/* Base style for all modules */
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#language
+#mpd {
+    background-color: @surface0;
+    padding: 0.5rem 1rem;
+    margin: 5px 5px;
+    border-radius: 1rem;
+}
+
+/* Workspaces styling remains the same */
+#workspaces {
+    border-radius: 1rem;
+    margin: 5px;
+    background-color: @surface0;
+    margin-left: 1rem;
+}
+
+#workspaces button {
+    color: @lavender;
+    border-radius: 1rem;
+    padding: 0.4rem;
+}
+
+#workspaces button.focused {
+    color: @sky;
+    background-color: @surface1;
+}
+
+#workspaces button:hover {
+    color: @sapphire;
+}
+
+/* Rest of the styling with colors remains the same */
+#battery {
+    color: @green;
+}
+
+#battery.charging, #battery.plugged {
+    color: @green;
+    background-color: @surface0;
+}
+
+#battery.critical:not(.charging) {
+    background-color: @red;
+    color: @text;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#cpu {
+    color: @green;
+}
+
+#memory {
+    color: @mauve;
+}
+
+#network {
+    color: @blue;
+}
+
+#network.disconnected {
+    color: @red;
+}
+
+#pulseaudio {
+    color: @maroon;
+}
+
+#pulseaudio.muted {
+    color: @overlay0;
+}
+
+#language {
+    color: @mauve;
+    min-width: 16px;
+}
+
+#temperature {
+    color: @peach;
+}
+
+#temperature.critical {
+    color: @red;
+}
+
+#tray {
+    color: @blue;
+}
+
+#idle_inhibitor {
+    color: @overlay2;
+}
+
+#idle_inhibitor.activated {
+    color: @text;
+}
+
+#mpd {
+    color: @mauve;
+}
+
+#mpd.disconnected {
+    color: @red;
+}
+
+#mpd.stopped {
+    color: @overlay0;
+}
+
+#mpd.paused {
+    color: @overlay2;
+}
