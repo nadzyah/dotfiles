@@ -23,6 +23,9 @@ exec {
 # NetworkManager applet
 exec_always nm-applet --indicator
 
+# Bluetooth applet
+exec --no-startup-id blueman-applet
+
 # Audio controls
 bindsym XF86AudioRaiseVolume exec pamixer -i 5
 bindsym XF86AudioLowerVolume exec pamixer -d 5
