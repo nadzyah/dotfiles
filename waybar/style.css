@@ -34,10 +34,9 @@ window#waybar {
 #scratchpad,
 #language
 #mpd {
-    background-color: @surface0;
-    padding: 0.5rem 1rem;
-    margin: 5px 5px;
-    border-radius: 1rem;
+    background-color: transparent;
+    padding: 0px 6px;
+    margin: 0px 3px;
 }
 
 /* Workspaces styling remains the same */
@@ -65,12 +64,11 @@ window#waybar {
 
 /* Rest of the styling with colors remains the same */
 #battery {
-    color: @green;
+    color: @peach;
 }
 
 #battery.charging, #battery.plugged {
     color: @green;
-    background-color: @surface0;
 }
 
 #battery.critical:not(.charging) {
@@ -84,15 +82,15 @@ window#waybar {
 }
 
 #cpu {
-    color: @green;
+    color: @text;
 }
 
 #memory {
-    color: @mauve;
+    color: @text;
 }
 
 #network {
-    color: @blue;
+    color: @text;
 }
 
 #network.disconnected {
@@ -100,7 +98,7 @@ window#waybar {
 }
 
 #pulseaudio {
-    color: @maroon;
+    color: @text;
 }
 
 #pulseaudio.muted {
@@ -108,12 +106,12 @@ window#waybar {
 }
 
 #language {
-    color: @mauve;
+    color: @text;
     min-width: 16px;
 }
 
 #temperature {
-    color: @peach;
+    color: @text;
 }
 
 #temperature.critical {
@@ -129,7 +127,7 @@ window#waybar {
 }
 
 #idle_inhibitor.activated {
-    color: @text;
+    color: @green;
 }
 
 #mpd {
