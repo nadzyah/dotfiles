@@ -134,7 +134,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec swaynag -t warning -m 'Exit sway?' -B 'Yes' 'swaymsg exit'
 
 # Background colour (mocha)
-output * bg #1e1e2e solid_color
+output * bg #000000 solid_color
 
 # Resize mode
 mode "resize" {
