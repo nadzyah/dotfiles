@@ -2,23 +2,20 @@
 
 * {
     font-family: Roboto;
-    font-size: 13px;
+    font-size: 12px;
     min-height: 0;
 }
 
 #waybar {
-    background: transparent;
+    background: #000000;
     color: @text;
-    margin: 5px 5px;
 }
 
 window#waybar {
-  /* you can also GTK3 CSS functions! */
-  background-color: shade(@base, 0.9);
+  background-color: #000000;
   border: 2px solid alpha(@crust, 0.3);
 }
 
-/* Base style for all modules */
 #clock,
 #battery,
 #cpu,
@@ -34,7 +31,7 @@ window#waybar {
 #scratchpad,
 #language
 #mpd {
-    background-color: transparent;
+    background-color: #000000;
     padding: 0px 6px;
     margin: 0px 3px;
 }
