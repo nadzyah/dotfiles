@@ -199,4 +199,4 @@ for_window [app_id="org.telegram.desktop"] floating enable, resize set 800 600, 
 
 # Keyboard layout
 input * xkb_layout "pl,by"
-input * xkb_options "grp:alt_space_toggle"
+input * xkb_options "grp:caps_toggle"
