@@ -103,7 +103,7 @@ window#waybar {
 }
 
 #language {
-    color: @text;
+    color: @sapphire;
     min-width: 16px;
 }
 
