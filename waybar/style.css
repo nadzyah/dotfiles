@@ -61,21 +61,16 @@ window#waybar {
 
 /* Rest of the styling with colors remains the same */
 #battery {
-    color: @peach;
-}
-
-#battery.charging, #battery.plugged {
     color: @green;
 }
 
+#battery.warning:not(.charging)
+{
+    color: @peach;
+}
+
 #battery.critical:not(.charging) {
-    background-color: @red;
-    color: @text;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    color: @red;
 }
 
 #cpu {

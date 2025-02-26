@@ -177,8 +177,6 @@ bindsym $mod+Escape mode "$mode_system"
 # Screenshot
 bindsym Print exec grim -g "$(slurp)" - | wl-copy
 
-# Application-specific settings
-for_window [app_id="telegramdesktop"] floating enable, resize set 600 600, move position 1650 790, sticky enable
 
 # Move workspaces between outputs
 bindsym $mod+p move workspace to output right
@@ -195,7 +193,7 @@ output DP-2 {
     position 0,0
 }
 
-for_window [app_id="org.telegram.desktop"] floating enable, resize set 800 600, move position right 20 bottom 20
+#for_window [app_id="org.telegram.desktop"] floating enable, resize set 800 600, move position right 20 bottom 20
 
 # Keyboard layout
 input * xkb_layout "pl,by"

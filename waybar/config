@@ -52,8 +52,8 @@
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "activated": "ACTIVE",
-            "deactivated": "INACTIVE"
+            "activated": "Sleep Blocker ON",
+            "deactivated": "Sleep Blocker OFF"
         }
     },
     "tray": {
@@ -72,7 +72,7 @@
         "format": "MEM: {}%"
     },
     "temperature": {
-        "critical-threshold": 80,
+        "critical-threshold": 50,
         "format": "{temperatureC}°C {icon}",
         //"format-icons": ["", "", ""]
     },
@@ -82,8 +82,8 @@
     },
     "battery": {
         "states": {
-            "warning": 30,
-            "critical": 15
+            "warning": 50,
+            "critical": 20
         },
         "format": "BAT: {capacity}%",
         "format-charging": "CHR: {capacity}%",
