@@ -52,8 +52,8 @@
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "activated": "Sleep Blocker ON",
-            "deactivated": "Sleep Blocker OFF"
+            "activated": "Sleep Blocker",
+            "deactivated": "Sleep Blocker"
         }
     },
     "tray": {
