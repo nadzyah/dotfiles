@@ -62,8 +62,8 @@
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format": "{:%a, %b %d, %Y | %I:%M:%S %p}",
-        "format-alt": "{:%a, %b %d, %Y | %I:%M:%S %p}"
-        //"locale": "en_GB.UTF-8"
+        "format-alt": "{:%a, %b %d, %Y | %I:%M:%S %p}",
+        "locale": "en_GB.UTF-8"
     },
     "cpu": {
         "format": "CPU: {usage}%",
