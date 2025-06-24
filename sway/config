@@ -1,6 +1,8 @@
 # sway config file
 set $mod Mod4
-set $locker swaylock -f -c 000000
+set $locker swaylock -f -c 1e1e2e
+
+include /etc/sway/config.d/*
 
 # Font for window titles
 font pango:monospace 8
@@ -183,14 +185,14 @@ bindsym $mod+p move workspace to output right
 
 # Second screen settings (very custom)
 output eDP-1 {
-    scale 1.1
-    position 1920,0
-}
-
-output DP-2 {
-    mode 1920x1080@60Hz 
     scale 1.0
     position 0,0
+}
+
+output DP-4 {
+    mode 1920x1080@60Hz 
+    scale 1.0
+    position 2256,0
 }
 
 #for_window [app_id="org.telegram.desktop"] floating enable, resize set 800 600, move position right 20 bottom 20
@@ -198,3 +200,22 @@ output DP-2 {
 # Keyboard layout
 input * xkb_layout "pl,by"
 input * xkb_options "grp:caps_toggle"
+
+mode "keycursor" {
+    bindsym Left seat - cursor move -10 0
+    bindsym Down seat - cursor move 0 +10
+    bindsym Up seat - cursor move 0 -10
+    bindsym Right seat - cursor move +10 0
+
+    bindsym Shift+Left seat - cursor move -50 0
+    bindsym Shift+Down seat - cursor move 0 +50
+    bindsym Shift+Up seat - cursor move 0 -50
+    bindsym Shift+Right seat - cursor move +50 0
+
+
+    bindsym Return exec 'swaymsg seat - cursor press button1 && swaymsg seat - cursor release button1'
+    bindsym Escape mode "default"
+}
+bindsym $mod+z mode "keycursor"
+
+output * bg /home/nadzeya/.local/share/wallpapers/debian-wallpaper.jpg fill
