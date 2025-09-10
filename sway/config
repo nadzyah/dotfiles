@@ -1,6 +1,7 @@
 # sway config file
 set $mod Mod4
-set $locker swaylock -f -c 1e1e2e
+#set $locker swaylock -f -c 1e1e2e
+set $locker swaylock -f
 
 include /etc/sway/config.d/*
 
@@ -41,13 +42,15 @@ bindsym XF86MonBrightnessDown exec light -U 5
 floating_modifier $mod
 
 # Terminal
-bindsym $mod+Return exec ghostty
+#bindsym $mod+Return exec ghostty
+bindsym $mod+Return exec gnome-terminal
 
 # Kill focused window
 bindsym $mod+q kill
 
 # Start launcher
-bindsym $mod+d exec bemenu-run
+#bindsym $mod+d exec bemenu-run
+bindsym $mod+d exec 'rofi -show drun'
 
 # Change focus
 bindsym $mod+j focus left
@@ -218,4 +221,6 @@ mode "keycursor" {
 }
 bindsym $mod+z mode "keycursor"
 
-output * bg /home/nadzeya/.local/share/wallpapers/debian-wallpaper.jpg fill
+#output * bg /home/nadzeya/.local/share/wallpapers/debian-wallpaper.jpg fill
+#output * bg /home/nadzeya/.local/share/wallpapers/yoyokwallpaper.png fill
+output * bg /home/nadzeya/.local/share/wallpapers/seagulls.jpg fill
