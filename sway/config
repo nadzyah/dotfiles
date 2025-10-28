@@ -204,22 +204,22 @@ output DP-4 {
 input * xkb_layout "pl,by"
 input * xkb_options "grp:caps_toggle"
 
-mode "keycursor" {
-    bindsym Left seat - cursor move -10 0
-    bindsym Down seat - cursor move 0 +10
-    bindsym Up seat - cursor move 0 -10
-    bindsym Right seat - cursor move +10 0
+# mode "keycursor" {
+#     bindsym Left seat - cursor move -10 0
+#     bindsym Down seat - cursor move 0 +10
+#     bindsym Up seat - cursor move 0 -10
+#     bindsym Right seat - cursor move +10 0
 
-    bindsym Shift+Left seat - cursor move -50 0
-    bindsym Shift+Down seat - cursor move 0 +50
-    bindsym Shift+Up seat - cursor move 0 -50
-    bindsym Shift+Right seat - cursor move +50 0
+#     bindsym Shift+Left seat - cursor move -50 0
+#     bindsym Shift+Down seat - cursor move 0 +50
+#     bindsym Shift+Up seat - cursor move 0 -50
+#     bindsym Shift+Right seat - cursor move +50 0
 
 
-    bindsym Return exec 'swaymsg seat - cursor press button1 && swaymsg seat - cursor release button1'
-    bindsym Escape mode "default"
-}
-bindsym $mod+z mode "keycursor"
+#     bindsym Return exec 'swaymsg seat - cursor press button1 && swaymsg seat - cursor release button1'
+#     bindsym Escape mode "default"
+# }
+# bindsym $mod+z mode "keycursor"
 
 #output * bg /home/nadzeya/.local/share/wallpapers/debian-wallpaper.jpg fill
 #output * bg /home/nadzeya/.local/share/wallpapers/yoyokwallpaper.png fill
