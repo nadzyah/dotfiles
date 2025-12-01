@@ -1,0 +1,10 @@
+[status]
+format = '[\[$status\]]($style) '
+disabled = false
+
+[time]
+disabled = false
+format = '[\[$time\]]($style) '
+time_format = '%H:%M:%S'
+utc_time_offset = '+1'
+time_range = '00:00:00-24:00:00'
