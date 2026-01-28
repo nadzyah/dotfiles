@@ -74,7 +74,7 @@
     },
     "temperature": {
         "critical-threshold": 80,
-        "format": "{temperatureC}°C {icon}",
+        "format": "🌡️ {temperatureC}°C {icon}",
         //"format-icons": ["", "", ""]
     },
     "backlight": {
@@ -86,9 +86,9 @@
             "warning": 50,
             "critical": 20
         },
-        "format": "BAT: {capacity}%",
-        "format-charging": "CHR: {capacity}%",
-        "format-plugged": "PLG: {capacity}%",
+        "format": "🪫 {capacity}%",
+        "format-charging": "🔋⚡ {capacity}%",
+        "format-plugged": "🔋🔌 {capacity}%",
         "format-alt": "{time} {icon}",
         //"format-icons": ["", "", "", "", ""]
     },
@@ -96,16 +96,16 @@
         "bat": "BAT2"
     },
     "network": {
-        "format-wifi": "W: {essid} ({signalStrength}%) {ipaddr}",
-        "format-ethernet": "E: {ipaddr}/{cidr}",
+        "format-wifi": "🛜 {essid} ({signalStrength}%) {ipaddr}",
+        "format-ethernet": "🔌 {ipaddr}/{cidr}",
         "tooltip-format": "{ifname} via {gwaddr}",
         "format-linked": "{ifname} (No IP)",
         "format-disconnected": "Disconnected",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio#input": {
-        "format-source": "MIC: {volume}%",
-        "format-source-muted": "MIC: off",
+        "format-source": "🎤 {volume}%",
+        "format-source-muted": "🎤 off",
         "format": "{format_source}",
         "scroll-step": 2,
         "smooth-scrolling-threshold": 1,
@@ -116,8 +116,8 @@
         "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -1%",
     },
     "pulseaudio#output": {
-        "format": "AUD: {volume}%",
-        "format-muted": "AUD: off",
+        "format": "🎧 {volume}%",
+        "format-muted": "🔇 off",
         "format-icons": {
             "default": ["", "", ""]
         },
