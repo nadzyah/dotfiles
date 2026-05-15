@@ -13,6 +13,10 @@
             "unlocked": ""
         }
     },
+    "sway/language": {
+        "format": "⌨ {shortDescription}",
+        "tooltip-format": "{long}"
+    },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },

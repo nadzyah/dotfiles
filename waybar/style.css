@@ -99,7 +99,7 @@ window#waybar {
 
 #language {
     color: @sapphire;
-    min-width: 16px;
+    min-width: 70px;
 }
 
 #temperature {

@@ -1,0 +1,15 @@
+// Polish layout extended with German umlauts
+// AltGr+y / Shift+AltGr+y → ä / Ä
+// AltGr+i / Shift+AltGr+i → ö / Ö
+// AltGr+u / Shift+AltGr+u → ü / Ü
+// ß is already on AltGr+t in the standard Polish layout
+
+default partial alphanumeric_keys
+xkb_symbols "basic" {
+    include "pl(basic)"
+    name[Group1]= "Polish/Deutsch";
+
+    key <AD06> { type="FOUR_LEVEL_ALPHABETIC", symbols[Group1]=[y, Y, adiaeresis, Adiaeresis] };
+    key <AD07> { type="FOUR_LEVEL_ALPHABETIC", symbols[Group1]=[u, U, udiaeresis, Udiaeresis] };
+    key <AD08> { type="FOUR_LEVEL_ALPHABETIC", symbols[Group1]=[i, I, odiaeresis, Odiaeresis] };
+};

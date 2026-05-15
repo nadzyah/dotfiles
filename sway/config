@@ -201,7 +201,7 @@ output DP-4 {
 #for_window [app_id="org.telegram.desktop"] floating enable, resize set 800 600, move position right 20 bottom 20
 
 # Keyboard layout
-input * xkb_layout "pl,by"
+input * xkb_layout "pl_de,by"
 input * xkb_options "grp:caps_toggle"
 
 # mode "keycursor" {
