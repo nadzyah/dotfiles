@@ -18,8 +18,8 @@ input "type:touchpad" {
 exec {
     dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
     swayidle -w \
-        timeout 300 '$locker' \
-        timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+        timeout 3000 '$locker' \
+        timeout 6000 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
         before-sleep '$locker'
 }
 
@@ -193,7 +193,7 @@ output eDP-1 {
 }
 
 output DP-4 {
-    mode 1920x1080@60Hz 
+    mode 1920x1080@60Hz
     scale 1.0
     position 2256,0
 }
