@@ -70,11 +70,10 @@
         "locale": "en_GB.UTF-8"
     },
     "cpu": {
-        "format": "CPU: {usage}%",
-        "tooltip": false
+        "format": "🎛️ {usage}%",
     },
     "memory": {
-        "format": "MEM: {}%"
+        "format": "🐏 {}%"
     },
     "temperature": {
         "critical-threshold": 80,
